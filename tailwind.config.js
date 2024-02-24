@@ -15,6 +15,10 @@ module.exports = {
       },
       fontFamily: {
         'sans': ["WorkSans", "sans-serif"]
+      },
+      backgroundImage: {
+        'bgPatternDesktop': "url('/public/assets/images/background-pattern-desktop.svg')",
+        'bgPatternMobile': "url('/public/assets/images/background-pattern-mobile.svg')",
       }
     },
   },
