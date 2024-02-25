@@ -2,21 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  font-size: 16px;
-}
-
-@layer utilities {
+/* @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */
 
 @layer base {
   @font-face {
     font-family: WorkSans;
     font-weight: 400;
-    src: url('/public/assets/fonts/WorkSans-VariableFont_wght.ttf') format("ttf"); 
+    src: url('/public/assets/fonts/static/WorkSans-Regular.ttf') format("ttf"); 
   } 
   @font-face {
     font-family: WorkSans;
@@ -38,7 +34,7 @@
   @font-face {
     font-family: WorkSans;
     font-weight: 700;
-    src: url('/public/assets/fonts/WorkSans-VariableFont_wght.ttf') format("ttf");
+    src: url('/public/assets/fonts/static/WorkSans-Bold.ttf') format("ttf");
   }
   @font-face {
     font-family: WorkSans;
@@ -46,4 +42,9 @@
     font-style: italic;
     src: url('/public/assets/fonts/WorkSans-Italic-VariableFont_wght.ttf') format("ttf");
   }
+}
+
+
+:root {
+  font-size: 16px;
 }
