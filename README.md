@@ -12,7 +12,6 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 
@@ -29,13 +28,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![image](https://github.com/GreenCitrus6/fm-faq-accordion/assets/145170576/fa1e93c2-2951-48ee-a871-997095301620)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/faq-accordion-using-reactjs-DMzBMd7ppW)
+- Live Site URL: [Deployed with Vercel](https://fm-faq-accordion-8clpnvyow-greencitrus6s-projects.vercel.app/)
 
 ## My process
 
