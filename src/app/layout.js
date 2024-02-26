@@ -1,7 +1,7 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
+import workSans from "next/font/local";
 
-const inter = Inter({ subsets: ["latin"] });
+const work_Sans = workSans({ src: './../../public/static/fonts/WorkSans-VariableFont_wght.ttf' });
 
 export const metadata = {
   title: "FM FAQ Accordion",
@@ -11,7 +11,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={work_Sans.className}>
+        {children} 
+      </body>
     </html>
   );
 }
