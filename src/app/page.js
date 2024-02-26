@@ -84,7 +84,7 @@ export default function Home() {
           </section>
         </section>
         {/* ATTRIBUTION */}
-        <h3 className="z-10 relative pt-3 px-5 text-sm text-center">Challenge by <Link href="https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz" className="text-blue-600 hover:text-blue-300 active:text-blue-200 ease-out duration-300">Frontend Mentor</Link>, Solution coded by <Link href="https://portfolio-website-git-main-greencitrus6s-projects.vercel.app/" className="text-blue-600 hover:text-blue-300 active:text-blue-200 ease-out duration-300">Daniel Aadland</Link></h3>
+        <h3 className="z-10 relative pt-3 px-5 text-sm text-center">Challenge by <Link href="https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz" target="_blank" className="text-blue-600 hover:text-blue-300 active:text-blue-200 ease-out duration-300">Frontend Mentor</Link>, Solution coded by <Link href="https://portfolio-website-git-main-greencitrus6s-projects.vercel.app/" target="_blank" className="text-blue-600 hover:text-blue-300 active:text-blue-200 ease-out duration-300">Daniel Aadland</Link></h3>
       </div>
       </main>
     </div>

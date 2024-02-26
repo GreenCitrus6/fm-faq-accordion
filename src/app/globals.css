@@ -12,13 +12,13 @@
   @font-face {
     font-family: WorkSans;
     font-weight: 400;
-    src: url('/public/public/static/fonts/WorkSans-Regular.ttf') format("ttf"); 
+    src: url('/public/static/fonts/WorkSans-VariableFont_wght.ttf') format("ttf"); 
   } 
   @font-face {
     font-family: WorkSans;
     font-weight: 400;
     font-style: italic;
-    src: url('/public/static/fonts/WorkSans-Italic-VariabelFont_wght.ttf') format("ttf");
+    src: url('/public/static/fonts/WorkSans-Italic-VariableFont_wght.ttf') format("ttf");
   }
   @font-face {
     font-family: WorkSans;
@@ -34,7 +34,7 @@
   @font-face {
     font-family: WorkSans;
     font-weight: 700;
-    src: url('/public/public/static/fonts/WorkSans-Bold.ttf') format("ttf");
+    src: url('/public/static/fonts/WorkSans-VariableFont_wght.ttf') format("ttf");
   }
   @font-face {
     font-family: WorkSans;
