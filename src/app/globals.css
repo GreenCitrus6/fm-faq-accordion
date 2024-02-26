@@ -12,39 +12,68 @@
   @font-face {
     font-family: WorkSans;
     font-weight: 400;
-    src: url('/public/assets/fonts/static/WorkSans-Regular.ttf') format("ttf"); 
+    src: url('/public/public/static/fonts/WorkSans-Regular.ttf') format("ttf"); 
   } 
   @font-face {
     font-family: WorkSans;
     font-weight: 400;
     font-style: italic;
-    src: url('/public/assets/fonts/WorkSans-Italic-VariabelFont_wght.ttf') format("ttf");
+    src: url('/public/static/fonts/WorkSans-Italic-VariabelFont_wght.ttf') format("ttf");
   }
   @font-face {
     font-family: WorkSans;
     font-weight: 600;
-    src: url('/public/assets/fonts/WorkSans-VariableFont_wght.ttf') format("ttf");
+    src: url('/public/static/fonts/WorkSans-VariableFont_wght.ttf') format("ttf");
   }
   @font-face {
     font-family: WorkSans;
     font-weight: 600;
     font-style: italic;
-    src: url('/public/assets/fonts/WorkSans-Italic-VariableFont_wght.ttf') format("ttf");
+    src: url('/public/static/fonts/WorkSans-Italic-VariableFont_wght.ttf') format("ttf");
   }
   @font-face {
     font-family: WorkSans;
     font-weight: 700;
-    src: url('/public/assets/fonts/static/WorkSans-Bold.ttf') format("ttf");
+    src: url('/public/public/static/fonts/WorkSans-Bold.ttf') format("ttf");
   }
   @font-face {
     font-family: WorkSans;
     font-weight: 700;
     font-style: italic;
-    src: url('/public/assets/fonts/WorkSans-Italic-VariableFont_wght.ttf') format("ttf");
+    src: url('/public/static/fonts/WorkSans-Italic-VariableFont_wght.ttf') format("ttf");
   }
 }
 
-
 :root {
   font-size: 16px;
+}
+
+/* #bg-image {
+  background-image: url('/public/static/images/background-pattern-mobile.svg');
+} */
+
+@media screen and (max-width: 750px) {
+  #bg-image-mobile {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 751px) {
+  :root {
+    font-size: 24px;
+  }
+  #bg-image-mobile {
+    display: hidden;
+  }
+  #bg-image-desktop {
+    display: block;
+  }
+  #accordionContainer {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  #accordionContents {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+
 }
