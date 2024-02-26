@@ -52,7 +52,7 @@ export default function Home() {
           </section>
           
           <section id="0-ans" className="questionAnswer h-0 transition-all duration-300 overflow-hidden w-full">
-            <p className="text-GrayishPurple">Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for all levels and ideal for portfolio building.</p>
+            <p className="text-GrayishPurple">Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScript. It&apos;s suitable for all levels and ideal for portfolio building.</p>
           </section>
           <hr className="mt-2 pb-4 border-LightPink" />
           <section className="questionButton flex justify-between items-center" onClick={ () => toggleAnswer("1-ans", "icon-1") }>
@@ -75,7 +75,7 @@ export default function Home() {
           </section>
           <hr className="mt-2 pb-4 border-LightPink" />
           <section className="questionButton flex justify-between items-center" onClick={ () => toggleAnswer("3-ans", "icon-3") }>
-            <h2 className="font-bold text-DarkPurple w-3/4 py-2 text-lg leading-5 hover:cursor-pointer hover:text-purple-700 ease-out duration-300 active:text-purple-400 ">How can I get help if I'm stuck on a challenge?</h2>
+            <h2 className="font-bold text-DarkPurple w-3/4 py-2 text-lg leading-5 hover:cursor-pointer hover:text-purple-700 ease-out duration-300 active:text-purple-400 ">How can I get help if I&apos;m stuck on a challenge?</h2>
             <Image id="icon-3-plus" src={ iconPlus } className=" w-[35px] min-[749px]:w-[50px] hover:cursor-pointer" alt="plus" />
             <Image id="icon-3-minus" src= { iconMinus } className="hidden w-[35px] min-[749px]:w-[50px] hover:cursor-pointer" alt="minus" />
           </section>
