@@ -34,8 +34,8 @@ export default function Home() {
     <div className="overflow-y-hidden">
       {/* background elements */}
       <div className="bgElements w-full h-screen bg-LightPink absolute z-0">
-        <Image src={ bgPatternMobile } id="bg-image-mobile" className="w-full z-0 hidden" alt="background image" />
-        <Image src={ bgPatternDesktop } id="bg-image-desktop" className="w-full z-0 hidden" alt="background image" />
+        <Image src={ bgPatternMobile } id="bg-image-mobile" className="w-full z-0 hidden" alt="background image" priority={ true } />
+        <Image src={ bgPatternDesktop } id="bg-image-desktop" className="w-full z-0 hidden" alt="background image" priority={ true } />
       </div>
 
       {/* FAQ accordion */}
