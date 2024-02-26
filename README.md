@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Frontend Mentor - FAQ accordion solution
 
-## Getting Started
+This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-First, run the development server:
+## Table of contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+
+
+## Overview
+
+### The challenge
+
+Users should be able to:
+
+- Hide/Show the answer to a question when the question is clicked
+- Navigate the questions and hide/show answers using keyboard navigation alone
+- View the optimal layout for the interface depending on their device's screen size
+- See hover and focus states for all interactive elements on the page
+
+### Screenshot
+
+![](./screenshot.jpg)
+
+
+### Links
+
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- TailwindCSS
+- [React](https://reactjs.org/) - JS library
+- [Next.js](https://nextjs.org/) - React framework
+
+
+### What I learned
+
+I had some difficulty in this challenge with swapping images responsively, such as the image in the background or the plus and minus buttons upon expanding an accordion item. I solved this problem by having both images in the DOM, but toggling whether they were visible or not. For the background image I did this with a media query, and for the plus and minus icons I did this with a function that executes when a tab of the accordion menu is expanded. 
+
+
+The function in question: 
+```jsx
+function toggleAnswer(answer, icon) {
+  let answerHtml = document.getElementById(`${answer}`);
+  
+  if (answerHtml.classList.contains('h-0')) {
+    //display answer text
+    answerHtml.classList.remove('h-0');
+    answerHtml.classList.add('h-36')
+    //hide plus icon, show minus icon
+    document.getElementById(`${icon}-plus`).classList.add('hidden');
+    document.getElementById(`${icon}-minus`).classList.remove('hidden');
+  } else {
+    //hide answer text
+    answerHtml.classList.add('h-0');
+    answerHtml.classList.remove('h-36');
+    //hide minus icon, display plus icon
+    document.getElementById(`${icon}-minus`).classList.add('hidden');
+    document.getElementById(`${icon}-plus`).classList.remove('hidden');
+  }
+}
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Continued development
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+It seems that Tailwind will only animate the expansion of the accordion menu if the height is explicitly defined, and not if it goes from 0 to auto. I would like to figure out a way to address this so that the accordion menu can hold text blocks of various sizes and still animate properly. I think I might have to do this with custom animation, so that might be something to learn next. 
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Author
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Website - [Daniel Aadland](https://portfolio-website-git-main-greencitrus6s-projects.vercel.app/)
+- Frontend Mentor - [@GreenCitrus6](https://www.frontendmentor.io/profile/GreenCitrus6)

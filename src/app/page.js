@@ -15,13 +15,14 @@ function toggleAnswer(answer, icon) {
     //display answer text
     answerHtml.classList.remove('h-0');
     answerHtml.classList.add('h-36')
-
+    //hide plus icon, show minus icon
     document.getElementById(`${icon}-plus`).classList.add('hidden');
     document.getElementById(`${icon}-minus`).classList.remove('hidden');
   } else {
+    //hide answer text
     answerHtml.classList.add('h-0');
     answerHtml.classList.remove('h-36');
-
+    //hide minus icon, display plus icon
     document.getElementById(`${icon}-minus`).classList.add('hidden');
     document.getElementById(`${icon}-plus`).classList.remove('hidden');
   }
@@ -33,8 +34,8 @@ export default function Home() {
     <div className="overflow-y-hidden">
       {/* background elements */}
       <div className="bgElements w-full h-screen bg-LightPink absolute z-0">
-        <Image src={ bgPatternMobile } id="bg-image-mobile" className="w-full z-0 hidden" />
-        <Image src={ bgPatternDesktop } id="bg-image-desktop" className="w-full z-0 hidden" />
+        <Image src={ bgPatternMobile } id="bg-image-mobile" className="w-full z-0 hidden" alt="background image" />
+        <Image src={ bgPatternDesktop } id="bg-image-desktop" className="w-full z-0 hidden" alt="background image" />
       </div>
 
       {/* FAQ accordion */}
@@ -42,7 +43,7 @@ export default function Home() {
         <div id="accordionContents" className="flex flex-col justify-center items-center max-h-[85%]">
         <section id="accordionContentsInner" className="faqAccordion col-span-1 max-h-[90%] w-full max-w-[90%] min-w-[285px]  overflow-x-hidden mx-10 px-5 pt-4 pb-5 bg-white z-20 rounded-lg shadow-sm">
           {/* FAQ HEADER */}
-          <h1 className="flex items-center w-full pt-2 pb-4"><Image src={ iconStar } className="w-[25px] min-[749px]:w-[40px]" /><span className="text-2xl font-extrabold pl-4 text-DarkPurple">FAQs</span></h1>
+          <h1 className="flex items-center w-full pt-2 pb-4"><Image src={ iconStar } className="w-[25px] min-[749px]:w-[40px]" alt="star icon" /><span className="text-2xl font-extrabold pl-4 text-DarkPurple">FAQs</span></h1>
           {/* ACCORDION */}
           <section className="questionButton flex justify-between items-center" onClick={ () => toggleAnswer("0-ans", "icon-0") }>
             <h2 className="font-bold text-DarkPurple w-3/4 py-2 text-lg leading-5 hover:cursor-pointer hover:text-purple-700 ease-out duration-300 active:text-purple-400 align-middle">What is Frontend Mentor, and how will it help me?</h2>
