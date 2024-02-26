@@ -8,49 +8,11 @@
   }
 } */
 
-/* @layer base {
-  @font-face {
-    font-family: WorkSans;
-    font-weight: 400;
-    src: url('/public/static/fonts/WorkSans-VariableFont_wght.ttf') format("ttf"); 
-  } 
-  @font-face {
-    font-family: WorkSans;
-    font-weight: 400;
-    font-style: italic;
-    src: url('/public/static/fonts/WorkSans-Italic-VariableFont_wght.ttf') format("ttf");
-  }
-  @font-face {
-    font-family: WorkSans;
-    font-weight: 600;
-    src: url('/public/static/fonts/WorkSans-VariableFont_wght.ttf') format("ttf");
-  }
-  @font-face {
-    font-family: WorkSans;
-    font-weight: 600;
-    font-style: italic;
-    src: url('/public/static/fonts/WorkSans-Italic-VariableFont_wght.ttf') format("ttf");
-  }
-  @font-face {
-    font-family: WorkSans;
-    font-weight: 700;
-    src: url('/public/static/fonts/WorkSans-VariableFont_wght.ttf') format("ttf");
-  }
-  @font-face {
-    font-family: WorkSans;
-    font-weight: 700;
-    font-style: italic;
-    src: url('/public/static/fonts/WorkSans-Italic-VariableFont_wght.ttf') format("ttf");
-  }
-} */
 
 :root {
   font-size: 16px;
 }
 
-/* #bg-image {
-  background-image: url('/public/static/images/background-pattern-mobile.svg');
-} */
 
 @media screen and (max-width: 750px) {
   #bg-image-mobile {

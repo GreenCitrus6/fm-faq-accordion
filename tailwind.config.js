@@ -13,9 +13,6 @@ module.exports = {
         "GrayishPurple": "hsl(292, 16%, 49%)",
         "DarkPurple": "hsl(292, 42%, 14%)"
       },
-      fontFamily: {
-        'WorkSans': ["'WorkSans'", "sans-serif"]
-      },
       backgroundImage: {
         'bgPatternDesktop': "url('/public/assets/images/background-pattern-desktop.svg')",
         'bgPatternMobile': "url('/public/assets/images/background-pattern-mobile.svg')",

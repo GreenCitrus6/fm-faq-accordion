@@ -39,7 +39,7 @@ export default function Home() {
       </div>
 
       {/* FAQ accordion */}
-      <main id="accordionContainer" className="h-screen w-full grid gap-1  grid-cols-1 grid-rows-1 justify-items-center items-center z-10 font-WorkSans">
+      <main id="accordionContainer" className="h-screen w-full grid gap-1  grid-cols-1 grid-rows-1 justify-items-center items-center z-10">
         <div id="accordionContents" className="flex flex-col justify-center items-center max-h-[85%]">
         <section id="accordionContentsInner" className="faqAccordion col-span-1 max-h-[90%] w-full max-w-[90%] min-w-[285px]  overflow-x-hidden mx-10 px-5 pt-4 pb-5 bg-white z-20 rounded-lg shadow-sm">
           {/* FAQ HEADER */}
